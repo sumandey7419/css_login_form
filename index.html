@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding:0
+}
+
+    body{
+        background: url(20491717.jpg) no-repeat;
+        background-size: 100%;
+    }
+
+    .back{
+        max-width: 400px;
+        min-height: 400px;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        margin:  20px auto 0 auto;
+        padding: 25px;
+        color: #414141;
+        margin-top: 100px;
+            
+    }
+    .input1{
+        display: block;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%; 
+        margin: 14px auto;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        
+        
+    }
+    
+    .login{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        
+    }
+    
+
+    .login:hover{
+        background-color: #e41b17;
+        
+    }
+
+    /* Gradient Background */
+    .login{
+        background: rgb(252,205,128);   
+    }
+
+    .form-title{
+        padding: 12px;
+        text-align: center;
+        position: relative;
+    }
+    h2{
+        color: #5c86e1;
+    }
+    .form-title .user-icon{
+        position: absolute;
+        font-size: 42px;
+        color: #fff;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        border-radius: 45px;
+        top: -60px;
+        left: -45px;
+    }
+    </style>
+
+<body>
+    <form class="back">
+        <div class="form-title">
+            <h2>CSS Login Form</h2>
+        </div>
+        <label for="email"><i class="fa fa-envelope"></i> Email:</label>
+        <input type="email" id="email" class="input1" placeholder="Enter your email adress">
+        <label for="pass"><i class="fa fa-lock"></i> Password:</label>
+        <input id="pass" type="password" class="input1" placeholder="Enter your password">
+        <button type="submit" class="login">Login</button>
+    </form>
+</body>
+</html>
